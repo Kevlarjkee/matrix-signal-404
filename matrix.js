@@ -48,7 +48,14 @@ function draw()
 //		var text = chinese[Math.floor(Math.random()*chinese.length)];
 //		var text = eng[Math.floor(Math.random()*eng.length)];
 		//x = i*font_size, y = value of drops[i]*font_size
-		ctx.fillText(text, i*font_size, drops[i]*font_size);
+		
+		//* ctx.fillText(text, i*font_size, drops[i]*font_size); //drop without reverse.
+
+		ctx.save(); //code for reverse symbols to 180 degrees.
+    		ctx.translate(i*font_size, drops[i]*font_size);
+    		ctx.rotate(Math.PI);
+		ctx.fillText(text, 0, font_size);
+    		ctx.restore();
 		
 		//sending the drop back to the top randomly after it has crossed the screen
 		//adding a randomness to the reset to make the drops scattered on the Y axis
