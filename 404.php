@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<head>
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="matrix.css" rel="stylesheet" type="text/css">
-</head>
 </head>
 <body>
 <div id='error-page'>
